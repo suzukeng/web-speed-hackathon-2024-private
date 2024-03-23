@@ -19,6 +19,7 @@ const EpisodeDetailPage: React.FC = () => {
   invariant(episodeId);
 
   const { data: book } = useBook({ params: { bookId } });
+  //query投げなくても得られそう
   const { data: episode } = useEpisode({ params: { episodeId } });
 
   return (
@@ -32,7 +33,7 @@ const EpisodeDetailPage: React.FC = () => {
       <Box aria-label="エピソード一覧" as="section" px={Space * 2}>
         <Flex align="center" as="ul" direction="column" justify="center">
           {book.episodes.map((episode) => (
-            <EpisodeListItem key={episode.id} bookId={bookId} episodeId={episode.id} />
+            <EpisodeListItem key={episode.id} bookId={bookId} episode={episode} />
           ))}
         </Flex>
       </Box>
