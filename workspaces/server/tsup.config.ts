@@ -16,7 +16,7 @@ export default defineConfig(async (): Promise<Options[]> => {
       },
       env: {
         API_URL: process.env['RENDER_EXTERNAL_URL'] ?? 'http://localhost:10000',
-        NODE_ENV: process.env['NODE_ENV'] || 'production',
+        NODE_ENV: process.env['NODE_ENV'] || 'development',
       },
       format: 'cjs',
       metafile: true,
@@ -25,9 +25,9 @@ export default defineConfig(async (): Promise<Options[]> => {
       outDir: OUTPUT_DIR,
       shims: true,
       sourcemap: true,
-      splitting: true,
+      splitting: false,
       target: 'node18',
-      treeshake: true,
+      treeshake: false,
     },
   ];
 });

@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { styled } from 'styled-components';
 
@@ -8,15 +8,15 @@ import { Text } from './foundation/components/Text';
 import { ActionLayout } from './foundation/layouts/ActionLayout';
 import { CommonLayout } from './foundation/layouts/CommonLayout';
 import { Color, Space, Typography } from './foundation/styles/variables';
-// import { AuthorDetailPage } from './pages/AuthorDetailPage';
-// import {BookDetailPage} from './pages/BookDetailPage';
-// import { EpisodeDetailPage } from './pages/EpisodeDetailPage';
-// import { SearchPage } from './pages/SearchPage';
+import { AuthorDetailPage } from './pages/AuthorDetailPage';
+import { BookDetailPage } from './pages/BookDetailPage';
+import { EpisodeDetailPage } from './pages/EpisodeDetailPage';
+import { SearchPage } from './pages/SearchPage';
 import { TopPage } from './pages/TopPage';
-const AuthorDetailPage = lazy(() => import('./pages/AuthorDetailPage'));
-const BookDetailPage = lazy(() => import('./pages/BookDetailPage'));
-const EpisodeDetailPage = lazy(() => import('./pages/BookDetailPage'));
-const SearchPage = lazy(() => import('./pages/BookDetailPage'));
+// const AuthorDetailPage = lazy(() => import('./pages/AuthorDetailPage'));
+// const BookDetailPage = lazy(() => import('./pages/BookDetailPage'));
+// const EpisodeDetailPage = lazy(() => import('./pages/BookDetailPage'));
+// const SearchPage = lazy(() => import('./pages/BookDetailPage'));
 
 const _BackToTopButton = styled(Link)`
   display: flex;
