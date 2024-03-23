@@ -1,6 +1,7 @@
 import React, { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { styled } from 'styled-components';
+
 import { SvgIcon } from './features/icons/components/SvgIcon';
 import { Link } from './foundation/components/Link';
 import { Text } from './foundation/components/Text';
