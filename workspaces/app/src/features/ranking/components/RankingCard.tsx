@@ -37,15 +37,7 @@ const _AvatarWrapper = styled.div`
   }
 `;
 
-type Book = {
-  author: { description: string; id: string; image: { alt: string; id: string }; name: string };
-  description: string;
-  episodes: { chapter: number; description: string; id: string; name: string }[];
-  id: string;
-  image: { alt: string; id: string };
-  name: string;
-};
-type Props = { book: Book };
+type Props = { book: any };
 
 const RankingCard: React.FC<Props> = ({ book }) => {
   const imageUrl = useImage({ height: 96, imageId: book.image.id, width: 96 });
