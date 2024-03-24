@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
+import { compress } from 'hono/compress';
 import { HTTPException } from 'hono/http-exception';
 import { secureHeaders } from 'hono/secure-headers';
 
@@ -26,7 +27,6 @@ app.use(
 );
 app.use(compressMiddleware);
 app.use(cacheControlMiddleware);
-
 app.get('/healthz', (c) => {
   return c.body('live', 200);
 });
@@ -35,6 +35,8 @@ app.route('/', imageApp);
 app.route('/', apiApp);
 app.route('/', adminApp);
 app.route('/', ssrApp);
+
+app.use(compress({ encoding: 'gzip' }));
 
 app.onError((cause) => {
   console.error(cause);
