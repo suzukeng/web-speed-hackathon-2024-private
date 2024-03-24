@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 
-import Jimp from 'jimp';
+import Jimp from 'jimp-compact';
 
 import type { ReadImageFunction } from './ReadImageFunction';
 
