@@ -217,9 +217,6 @@ importers:
       p-queue:
         specifier: 8.0.1
         version: 8.0.1
-      path-browserify:
-        specifier: 1.0.1
-        version: 1.0.1
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -7844,10 +7841,6 @@ packages:
     resolution: {integrity: sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==}
     dependencies:
       entities: 4.5.0
-    dev: false
-
-  /path-browserify@1.0.1:
-    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
     dev: false
 
   /path-exists@4.0.0:

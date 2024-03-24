@@ -13,10 +13,6 @@ import { BookDetailPage } from './pages/BookDetailPage';
 import { EpisodeDetailPage } from './pages/EpisodeDetailPage';
 import { SearchPage } from './pages/SearchPage';
 import { TopPage } from './pages/TopPage';
-// const AuthorDetailPage = lazy(() => import('./pages/AuthorDetailPage'));
-// const BookDetailPage = lazy(() => import('./pages/BookDetailPage'));
-// const EpisodeDetailPage = lazy(() => import('./pages/BookDetailPage'));
-// const SearchPage = lazy(() => import('./pages/BookDetailPage'));
 
 const _BackToTopButton = styled(Link)`
   display: flex;
