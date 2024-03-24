@@ -1,3 +1,3 @@
 export async function jitter(): Promise<void> {
-  await new Promise((resolve) => setTimeout(resolve, 100 + Math.random() * 50));
+  await new Promise((resolve) => setTimeout(resolve, 300 + Math.random() * 100));
 }
